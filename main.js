@@ -3,18 +3,27 @@
 
 /* ABSTRACCION */
 
-function sumarRango (min,max) {
-  let total = 0;
+// function sumarRango(min, max) {
+//   let total = 0;
 
-  for (let i = min; i <= max; i++) {
-    total += i
-  }
+//   for (let i = min; i <= max; i++) {
+//     total += i;
+//   }
 
-  return total;
+//   return total;
+// }
+
+// console.log(sumarRango(1, 5));
+
+/* Retorno de funciones */
+
+// const mayorQueDiez = num =>  num > 10;
+
+function mayorQue(x) {
+  return (num) => num > x;
 }
 
-console.log(sumarRango(1, 10));
-console.log(sumarRango(3, 7));
+const mayorQueDiez = mayorQue(10);
+const mayoQueVeinte = mayorQue(20);
+console.log(mayorQueDiez(8));
 
-let sumaEntreTresYSiete = sumarRango(3, 7);
-console.log(sumaEntreTresYSiete);
