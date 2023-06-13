@@ -29,15 +29,7 @@
 
 /* Metodos de busqueda */
 
-const numeros = [50, 12, 37, 17, 25, 6];
-const animales = ["perro", "gato", "cisne", "tortuga"];
-const productos = [
-  {nombre : "mesa", precio : 35},
-  {nombre : "silla de plastico", precio : 50},,
-  {nombre : "silla de madera", precio : 80},
-  {nombre : "ventana", precio : 50},
-  {nombre : "puerta", precio : 90},
-];
+
 
 // forEach() => recorrer el array y ejecutar lo que le digamos con cada elemento
 
@@ -97,5 +89,25 @@ const productos = [
 // const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
 // console.log(total);
 
-const totalCarrito = productos.reduce((acumulador, producto) => acumulador + producto.precio, 0);
-console.log(totalCarrito);
+// const totalCarrito = productos.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+// console.log(totalCarrito);
+
+// sort() => reordenar el array segun el criterio que le indiquemos
+
+const numeros = [50, 12, 37, 17, 25, 6];
+const animales = ["perro", "gato", "cisne", "tortuga"];
+const productos = [
+  {nombre : "mesa", precio : 35},
+  {nombre : "silla de plastico", precio : 50},,
+  {nombre : "silla de madera", precio : 80},
+  {nombre : "ventana", precio : 50},
+  {nombre : "puerta", precio : 90},
+];
+
+numeros.sort((a, b) => a - b);
+console.log(numeros);
+
+numeros.sort((a, b) => a + b);
+console.log(numeros);
+
+
