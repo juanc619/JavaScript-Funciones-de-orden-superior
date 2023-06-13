@@ -71,8 +71,23 @@ const productos = [
 
 /* some () => recorrer el array y responder true o false segun si encuentra o no un elemento que cumpla con una condicion */
 
-const cisne = animales.some((animal) => animal === "cisne");
-console.log(cisne);
+// const cisne = animales.some((animal) => animal === "cisne");
+// console.log(cisne);
 
-const caballo = animales.some((animal) => animal === "caballo");
-console.log(caballo);
+// const caballo = animales.some((animal) => animal === "caballo");
+// console.log(caballo);
+
+/* map () => Recorrer el array retornar uno nuevo con los elementos transformados del array original */
+
+// const nombres = productos.map((producto) => producto.nombre);
+// console.log(nombres);
+
+const preciosActualizados = productos.map(( producto) => {
+  return {
+    nombre : producto.nombre,
+    precio : producto.precio * 1.5
+  }
+});
+
+console.log(productos);
+console.log(preciosActualizados);
