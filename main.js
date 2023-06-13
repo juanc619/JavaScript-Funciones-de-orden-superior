@@ -45,8 +45,18 @@ const productos = [
 //   console.log(numero);
 // }); 
 
-productos.forEach((producto) => {
-  console.log(producto.nombre);
-  console.log(producto.precio);
-});
+// productos.forEach((producto) => {
+//   console.log(producto.nombre);
+//   console.log(producto.precio);
+// });
 
+
+/* find()  => recorrer el array y retornar el primer elemento que cumpla con una condicion*/ 
+
+// const perro = animales.find((animal) => animal === "perro");
+
+// console.log(perro);
+
+let productoElegido = prompt("Ingrese el producto que quiere comprar");
+
+console.log(productos.find((producto) => producto.nombre === productoElegido));
