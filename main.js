@@ -57,6 +57,14 @@ const productos = [
 
 // console.log(perro);
 
-let productoElegido = prompt("Ingrese el producto que quiere comprar");
+// let productoElegido = prompt("Ingrese el producto que quiere comprar");
 
-console.log(productos.find((producto) => producto.nombre === productoElegido));
+// console.log(productos.find((producto) => producto.nombre === productoElegido));
+
+/* filter () => Recorrer el array y retornar uno nuevo con todos los elementos que cumplan con una condicion */
+
+// const perro = animales.filter((animal) => animal === "gato");
+// console.log("gato");
+
+const sillas  = productos.filter((producto) => producto.nombre.includes("silla"));
+console.log(sillas);
