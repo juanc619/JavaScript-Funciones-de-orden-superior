@@ -82,12 +82,20 @@ const productos = [
 // const nombres = productos.map((producto) => producto.nombre);
 // console.log(nombres);
 
-const preciosActualizados = productos.map(( producto) => {
-  return {
-    nombre : producto.nombre,
-    precio : producto.precio * 1.5
-  }
-});
+// const preciosActualizados = productos.map(( producto) => {
+//   return {
+//     nombre : producto.nombre,
+//     precio : producto.precio * 1.5
+//   }
+// });
 
-console.log(productos);
-console.log(preciosActualizados);
+// console.log(productos);
+// console.log(preciosActualizados);
+
+// reduce() => recorrer el array y retornarnos un unico valor tras hacer una operacion sobre los elementos
+
+// const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+// console.log(total);
+
+const totalCarrito = productos.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+console.log(totalCarrito);
