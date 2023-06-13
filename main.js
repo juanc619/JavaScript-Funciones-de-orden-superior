@@ -66,5 +66,13 @@ const productos = [
 // const perro = animales.filter((animal) => animal === "gato");
 // console.log("gato");
 
-const sillas  = productos.filter((producto) => producto.nombre.includes("silla"));
-console.log(sillas);
+// const sillas  = productos.filter((producto) => producto.nombre.includes("silla"));
+// console.log(sillas);
+
+/* some () => recorrer el array y responder true o false segun si encuentra o no un elemento que cumpla con una condicion */
+
+const cisne = animales.some((animal) => animal === "cisne");
+console.log(cisne);
+
+const caballo = animales.some((animal) => animal === "caballo");
+console.log(caballo);
